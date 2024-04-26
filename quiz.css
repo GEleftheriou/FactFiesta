@@ -30,11 +30,10 @@ body, html {
 
 /* Timer display settings */
 .timer-container {
-    position: fixed; /* Fixed positioning on the screen */
-    top: 25px; /* Distance from the top of the viewport */
-    width: 25%; /* Width of the timer box */
-    max-width: 150px;
-    padding: 30px 40px; /* Padding around the timer */
+    margin-top: 25px; /* Distance from the top of the viewport */
+    width: 100%; /* Width of the timer box */
+    max-width: 75px;
+    padding: 30px 20px; /* Padding around the timer */
     background-color: #BD243C; /* Dark red background */
     border: 4px solid #333; /* Dark border matching the quiz container */
     border-radius: 8px; /* Rounded corners */
@@ -42,7 +41,7 @@ body, html {
 }
 
 #timer {
-    font-size: 96px; /* Large font size for visibility */
+    font-size: 48px; /* Large font size for visibility */
     font-weight: bold; /* Bold font weight */
     color: #ffffff; /* White text color */
 }
