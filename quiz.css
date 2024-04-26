@@ -30,23 +30,22 @@ body, html {
 
 /* Timer display settings */
 .timer-container {
-    position: fixed;
-    top: 10%; /* Relative to the viewport height */
-    left: 50%;
-    transform: translateX(-50%);
-    width: 200px; /* Fixed width */
-    padding: 20px; /* Reduced padding for consistency */
-    background-color: #BD243C;
-    border: 4px solid #333;
-    border-radius: 8px;
-    text-align: center;
-    z-index: 1000; /* Ensures it stays on top of other elements */
+    position: fixed; /* Fixed positioning on the screen */
+    top: 100px; /* Distance from the top of the viewport */
+    left: 50%; /* Horizontally centers the timer */
+    transform: translateX(-50%); /* Corrects center alignment */
+    width: 200px; /* Width of the timer box */
+    padding: 60px 40px; /* Padding around the timer */
+    background-color: #BD243C; /* Dark red background */
+    border: 4px solid #333; /* Dark border matching the quiz container */
+    border-radius: 8px; /* Rounded corners */
+    text-align: center; /* Center alignment of text */
 }
 
 #timer {
-    font-size: 48px; /* Large but not too large for small screens */
-    font-weight: bold;
-    color: #ffffff;
+    font-size: 96px; /* Large font size for visibility */
+    font-weight: bold; /* Bold font weight */
+    color: #ffffff; /* White text color */
 }
 
 /* Container for displaying the current question */
