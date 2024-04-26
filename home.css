@@ -1,0 +1,60 @@
+/* home.css */
+
+/* General Styles */
+body, html {
+    height: 100%; /* Full screen height */
+    margin: 0; /* No margin */
+    padding: 0; /* No padding */
+    font-family: 'Arial', sans-serif; /* Universal font */
+    display: flex; /* Enables flexible box layout */
+    align-items: center; /* Center content vertically */
+    justify-content: center; /* Center content horizontally */
+    background: #FEF9CD; /* Light cream background */
+    color: #333; /* Dark grey text */
+}
+
+/* Container for homepage content */
+.home-container {
+    width: 90%; /* Takes up 90% of the parent width */
+    max-width: 665px; /* Maximum width of 665 pixels */
+    margin: auto; /* Centered horizontally */
+    text-align: center; /* Center-align text */
+}
+
+/* Styles for the logo */
+.logo {
+    width: 600px; /* Set fixed width for the logo */
+    margin-bottom: 30px; /* Space below the logo */
+    margin-right: 65px; /* Shift the logo to the left */
+}
+
+/* Styles for dropdown menus */
+select {
+    padding: 15px; /* Padding inside the dropdown */
+    width: 325px; /* Fixed width for the dropdown */
+    margin-bottom: 20px; /* Space below the dropdown */
+    font-size: 20px; /* Larger text for easy reading */
+    font-weight: bold; /* Bold text for emphasis */
+    border: 4px solid #DC143C; /* Thick red border */
+    border-radius: 4px; /* Rounded corners */
+    background-color: #fff; /* White background */
+    color: #333; /* Dark grey text */
+}
+
+/* General button styles */
+button {
+    background-color: #DC143C; /* Red background */
+    color: white; /* Text color white for contrast */
+    border: none; /* No border */
+    padding: 10px 20px; /* Padding around text */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 18px; /* Text size */
+    font-weight: bold; /* Bold text */
+    border-radius: 4px; /* Rounded button edges */
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: #BD243C; /* Darker red on hover */
+}
+

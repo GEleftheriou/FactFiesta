@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en"> <!-- Starts the HTML document and specifies the language as English -->
+
+<head>
+    <meta charset="UTF-8"> <!-- Specifies the character encoding -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ensures the page works on different devices -->
+    <title>FactFiesta</title> <!-- Sets the title of the webpage shown in the browser tab -->
+    <link rel="stylesheet" href="home.css"> <!-- Link to an external CSS file for styling the webpage -->
+</head>
+
+<body> 
+    <div class="home-container"> 
+        <img src="factfiestalogo.png" alt="FactFiesta Logo" class="logo"> <!-- Displays an image, in this case, the logo of FactFiesta -->
+        <div class="form-container"> 
+            <select id="topicSelect"> <!-- Dropdown list allowing users to select a quiz topic -->
+                <option value="" disabled selected hidden>Select a Quiz Topic</option> <!-- Default non-selectable prompt in the dropdown -->
+                <option value="history">History</option> <!-- Option in the dropdown -->
+                <option value="science">Science</option> <!-- Option in the dropdown -->
+                <option value="geography">Geography</option> <!-- Option in the dropdown -->
+                <option value="filmandtv">Film & TV</option> <!-- Option in the dropdown -->
+                <option value="music">Music</option> <!-- Option in the dropdown -->
+                <option value="general">General</option> <!-- Option in the dropdown -->
+            </select>
+        </div>
+        <div>
+            <button onclick="goToQuiz()">Start Quiz</button> <!-- Button that triggers the `goToQuiz()` function when clicked -->
+        </div>
+    </div>
+    <script src="home.js"></script> <!-- Link to an external JavaScript file that contains the logic for the home page -->
+</body>
+</html>

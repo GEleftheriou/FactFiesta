@@ -1,0 +1,112 @@
+/* quiz.css */
+
+body, html {
+    height: 100%; /* Covers the full height of the viewport */
+    margin: 0; /* No margins */
+    padding: 0; /* No padding */
+    font-family: 'Arial', sans-serif; /* Uses Arial font for clear readability */
+    display: flex; /* Sets up a flexible box layout */
+    flex-direction: column; /* Stacks child elements vertically */
+    align-items: center; /* Aligns children in the center horizontally */
+    justify-content: center; /* Aligns children in the center vertically */
+    background: #FEF9CD; /* Cream background for the entire page */
+    color: #333; /* Dark grey text color */
+}
+
+/* Container for holding quiz elements */
+.quiz-container {
+    width: 800px; /* Container width */
+    padding: 20px; /* Space inside the container */
+    background-color: #ffffff; /* White background */
+    border-radius: 8px; /* Rounded corners */
+    border: 4px solid #333; /* Thick dark border */
+    display: flex; /* Flexible box layout for inner elements */
+    flex-direction: column; /* Vertical stacking of inner elements */
+    align-items: center; /* Center alignment of items horizontally */
+    justify-content: center; /* Center alignment of items vertically */
+    margin-top: 50px; /* Space from the top */
+    position: relative; /* Context for positioning child elements */
+}
+
+/* Timer display settings */
+.timer-container {
+    position: fixed; /* Fixed positioning on the screen */
+    top: 100px; /* Distance from the top of the viewport */
+    left: 50%; /* Horizontally centers the timer */
+    transform: translateX(-50%); /* Corrects center alignment */
+    width: 200px; /* Width of the timer box */
+    padding: 60px 40px; /* Padding around the timer */
+    background-color: #BD243C; /* Dark red background */
+    border: 4px solid #333; /* Dark border matching the quiz container */
+    border-radius: 8px; /* Rounded corners */
+    text-align: center; /* Center alignment of text */
+}
+
+#timer {
+    font-size: 96px; /* Large font size for visibility */
+    font-weight: bold; /* Bold font weight */
+    color: #ffffff; /* White text color */
+}
+
+/* Container for displaying the current question */
+.question-container {
+    width: 700px; /* Width of the question area */
+    min-height: 100px; /* Minimum height to accommodate text */
+    text-align: center; /* Center alignment of question text */
+    padding: 0px; /* No padding */
+    display: flex; /* Flexible display to center content */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    background-color: #ffffff; /* White background */
+    border-radius: 8px; /* Rounded corners */
+    border: 1px solid #ccc; /* Light gray border */
+    margin-bottom: 20px; /* Space below the container */
+}
+
+#question {
+    font-size: 24px; /* Font size for question text */
+    color: #2a2a2a; /* Dark gray color for readability */
+    flex: 1; /* Flex property to fill container */
+}
+
+/* Grid layout for answer buttons */
+.answers-container {
+    display: grid; /* Grid display */
+    grid-template-columns: 1fr; /* One column layout */
+    grid-template-rows: auto; /* Row size based on content */
+    justify-content: center; /* Center grid items horizontally */
+    align-items: center; /* Center grid items vertically */
+    width: 100%; /* Full width of its parent */
+    max-width: 800px; /* Maximum width */
+    margin: auto; /* Automatically margins for horizontal centering */
+}
+
+.answer-btn {
+    padding: 15px; /* Padding inside the button */
+    background-color: #DC143C; /* Bright red background */
+    color: white; /* White text color */
+    border-radius: 5px; /* Rounded button edges */
+    font-size: 16px; /* Text size */
+    font-weight: bold; /* Bold text */
+    width: 100%; /* Full width of the column */
+    height: 50px; /* Fixed height */
+    transition: background-color 0.3s; /* Color change effect on hover */
+    margin-bottom: 10px; /* Space below each button */
+}
+
+.answer-btn:hover {
+    background-color: #BD243C; /* Darker red on hover */
+}
+
+/* Container for feedback messages */
+.feedback-container {
+    width: 100%; /* Full container width */
+    text-align: center; /* Text centered inside the container */
+}
+
+#feedback {
+    font-size: 18px; /* Font size of feedback text */
+    font-weight: bold; /* Bold text for emphasis */
+    color: #333; /* Dark gray text color */
+    display: block; /* Block display style for new line */
+}
