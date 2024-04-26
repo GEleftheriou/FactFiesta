@@ -1,41 +1,46 @@
 /* quiz.css */
 
 body, html {
-    height: 100%; /* Full screen height */
-    margin: 0; /* No margin */
+    height: 100%; /* Covers the full height of the viewport */
+    margin: 0; /* No margins */
     padding: 0; /* No padding */
-    font-family: 'Arial', sans-serif; /* Universal font */
-    display: flex; /* Enables flexible box layout */
-    align-items: center; /* Center content vertically */
-    justify-content: center; /* Center content horizontally */
-    background: #FEF9CD; /* Light cream background */
-    color: #333; /* Dark grey text */
+    font-family: 'Arial', sans-serif; /* Uses Arial font for clear readability */
+    display: flex; /* Sets up a flexible box layout */
+    flex-direction: column; /* Stacks child elements vertically */
+    align-items: center; /* Aligns children in the center horizontally */
+    justify-content: center; /* Aligns children in the center vertically */
+    background: #FEF9CD; /* Cream background for the entire page */
+    color: #333; /* Dark grey text color */
 }
 
+/* Container for holding quiz elements */
+.quiz-container {
+    width: 100%; /* Container width */
+    padding: 20px; /* Space inside the container */
+    background-color: #ffffff; /* White background */
+    border-radius: 8px; /* Rounded corners */
+    border: 4px solid #333; /* Thick dark border */
+    display: flex; /* Flexible box layout for inner elements */
+    flex-direction: column; /* Vertical stacking of inner elements */
+    align-items: center; /* Center alignment of items horizontally */
+    justify-content: center; /* Center alignment of items vertically */
+    margin-top: 50px; /* Space from the top */
+    position: relative; /* Context for positioning child elements */
+}
+
+/* Timer display settings */
 .timer-container {
-    width: 90%;
-    max-width: 100px;
-    margin: auto;
-    padding: 30px 40px;
-    background-color: #BD243C;
-    border: 4px solid #333;
-    border-radius: 8px;
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 50px;
-}
-
-.qa-container {
-    width: 800px;
-    padding: 20px;
-    background-color: #ffffff;
-    border-radius: 8px;
-    border: 4px solid #333;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 50px;
+    position: fixed; /* Fixed positioning on the screen */
+    top: 100px; /* Distance from the top of the viewport */
+    left: 50%; /* Horizontally centers the timer */
+    transform: translateX(-50%); /* Corrects center alignment */
+    width: 100%; /* Width of the timer box */
+    max-width: 150px;
+    padding: 60px 40px; /* Padding around the timer */
+    background-color: #BD243C; /* Dark red background */
+    border: 4px solid #333; /* Dark border matching the quiz container */
+    border-radius: 8px; /* Rounded corners */
+    text-align: center; /* Center alignment of text */
 }
 
 #timer {
