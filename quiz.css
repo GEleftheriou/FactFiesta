@@ -31,7 +31,6 @@ body, html {
 /* Timer display settings */
 .timer-container {
     margin-top: 20px; /* Distance from the top of the viewport */
-    margin-bottom: 10px;
     width: 100%; /* Width of the timer box */
     max-width: 75px;
     padding: 30px 20px; /* Padding around the timer */
