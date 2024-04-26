@@ -32,8 +32,6 @@ body, html {
 .timer-container {
     position: fixed; /* Fixed positioning on the screen */
     top: 100px; /* Distance from the top of the viewport */
-    left: 50%; /* Horizontally centers the timer */
-    transform: translateX(-50%); /* Corrects center alignment */
     width: 100%; /* Width of the timer box */
     max-width: 150px;
     padding: 60px 40px; /* Padding around the timer */
