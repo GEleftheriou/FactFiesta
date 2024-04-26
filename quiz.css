@@ -15,8 +15,7 @@ body, html {
 
 /* Container for holding quiz elements */
 .quiz-container {
-    width: 100%; /* Container width */
-    max-width: 800px;
+    width: 800px; /* Container width */
     padding: 20px; /* Space inside the container */
     background-color: #ffffff; /* White background */
     border-radius: 8px; /* Rounded corners */
