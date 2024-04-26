@@ -29,38 +29,24 @@ body, html {
 }
 
 /* Timer display settings */
-/* Base styles for larger screens */
 .timer-container {
     position: fixed;
-    top: 100px;
+    top: 10%; /* Relative to the viewport height */
     left: 50%;
     transform: translateX(-50%);
-    width: 200px;
-    padding: 60px 40px;
+    width: 200px; /* Fixed width */
+    padding: 20px; /* Reduced padding for consistency */
     background-color: #BD243C;
     border: 4px solid #333;
     border-radius: 8px;
     text-align: center;
+    z-index: 1000; /* Ensures it stays on top of other elements */
 }
 
 #timer {
-    font-size: 96px;
+    font-size: 48px; /* Large but not too large for small screens */
     font-weight: bold;
     color: #ffffff;
-}
-
-/* Responsive adjustments for screens narrower than 500px */
-@media (max-width: 500px) {
-    .timer-container {
-        top: 20px; /* Less space from the top */
-        width: 90%; /* More relative width */
-        padding: 20px 10px; /* Smaller padding */
-        font-size: 24px; /* Adjust font size for space */
-    }
-
-    #timer {
-        font-size: 48px; /* Smaller font size for smaller screens */
-    }
 }
 
 /* Container for displaying the current question */
